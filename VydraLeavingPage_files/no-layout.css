@@ -1,0 +1,340 @@
+body,html{background-color:white;}
+*{padding:0;margin:0;border-collapse:collapse;background-repeat:no-repeat;}
+body{color:#333;padding-left:10px;font-size:12px;font-family:arial,sans-serif;line-height:1.25;position:relative;}
+#wrapper{margin:0 auto;}
+a img,fieldset{border:0;}
+ul,ol{list-style-type:none;}
+a{text-decoration:none;color:#005689;}
+a:hover{text-decoration:underline;}
+a:focus,a:active{outline:none;background-color:#005689;color:#fff;}
+#skiplinks ul,#skiplinks li{margin:0;padding:0;}
+#skiplinks li{list-style-type:none;display:inline;}
+#skiplinks a,#video-settings a{font-weight:bold;position:absolute;top:30px;left:8px;overflow:hidden;width:0;height:0;font-size:1.2em;z-index:1002;}
+#skiplinks a:active,#skiplinks a:focus,#video-settings a:active,#video-settings a:focus{position:absolute;width:auto;height:auto;border:0;margin:0;padding:8px;background:#333;color:#fff;z-index:10000;}
+#video-settings .not-cookied p{position:absolute;left:-100em;}
+#abuse-box-wrapper,#signin-div-wrapper,div.dialog-box-wrapper{display:block;z-index:100;background:transparent url(images/white-bg.png) top left repeat;position:fixed;width:100%;height:100%;}
+#abuse-box,div.dialog-box{border:1px solid #333;z-index:800;background-color:#fff;color:#000;top:100px;width:288px;padding:10px 10px 10px 10px;position:fixed;}
+#abuse-box{font-size:.75em;}
+body.popup-comments #abuse-box{font-size:1em;}
+body.popup-comments #abuse-box h2{font-family:georgia,serif;}
+#wrapper #abuse-box{font-size:1em;}
+div.dialog-box.scrollable{position:absolute;}
+#comment-box-pluck .post-comment-header{float:left;width:420px;}
+#comment-box-pluck .post-comment-header h1{margin-bottom:20px;}
+#comment-box-pluck #close-comment-box,#abuse-box-wrapper #abuse-box-close,#signin-div #login-close{float:right;width:80px;text-align:right;}
+#comment-box-pluck #close-comment-box a,#abuse-box-wrapper #abuse-box-close a,#login-close-link{background:#fff url(images/close_button.gif) top right no-repeat;padding:0 18px 0 0;}
+.comment-author{clear:both;}
+.comment-author ul{overflow:hidden;}
+.comment-author .comment-author-img{float:left;width:35px;}
+.comment-author .comment-author-name{float:left;width:auto;}
+.comment-author .comment-author-name a{display:block;}
+.comment-author .author-role{float:right;width:35px;}
+.premoderation-warning{color:red;font-weight:bold;margin-top:5px;}
+.user-premoderation-warning{display:none;}
+#comment-box-edit,#comment-box-progress,#comment-close-confirmation-area,#comment-premoderation-area,#comment-thank-you-area{clear:both;}
+#comment-box-edit,#abuse-box-edit-area{margin:20px 0 0 0;}
+#abuse-box-edit-area{border-top:1px dotted #ccc;}
+#comment-box-edit fieldset{margin:0;clear:both;}
+#comment-box-edit #blockquote-button{float:left;margin-bottom:3px;width:100%;}
+#blockquote-button input{float:left;background-color:#ededed;border:1px solid #333;color:#333;font-size:.915em;margin-right:5px;}
+#blockquote-button p{text-align:right;float:right;padding-top:2px;position:relative;}
+#comment-box-pluck #comment-box-edit{margin-top:17px;}
+#comment-box-pluck #comment-box-edit #blockquote-button{margin-bottom:1px;width:449px;}
+#comment-box-pluck #blockquote-button input{background-color:#e8e8e8;border-style:outset;border-top-color:#fff;border-left-color:#fff;border-right-color:#666;border-bottom-color:#666;margin-right:3px;}
+#comment-box-pluck #blockquote-button input#add-bolds{font-weight:bold;}
+#comment-box-pluck #blockquote-button input#add-italics{font-style:italic;}
+#comment-box-pluck #blockquote-button input#add-links{color:#005689;}
+#comment-box-pluck #blockquote-button p{margin-top:0;padding-top:0;top:2px;}
+#comment-body,#comment-box-progress,#abuse-progress-area,#abuse-description,#pluck-loading-dialog{font-size:1em;font-family:arial,sans-serif;}
+#abuse-description{width:100%;}
+#comment-body{width:447px;}
+#comment-box-progress,#abuse-progress-area,#abuse-thank-you-area,#abuse-close-confirmation-area,#comment-close-confirmation-area,#abuse-pluck-error-area{border-top:1px dotted #ccc;border-bottom:1px dotted #ccc;margin-top:20px;}
+#comment-box-progress,#abuse-progress-area{background:url(images/pluck-loading-bar.gif) center center no-repeat;}
+#comment-box-progress p,#abuse-progress-area p,#abuse-thank-you-area p,#abuse-close-confirmation-area p,#comment-close-confirmation-area p,#pluck-loading-dialog p{margin:70px 0 50px 0;text-align:center;}
+#pluck-loading-dialog{border-top-width:1px;border-top-style:dotted;padding:70px 0;}
+#pluck-loading-dialog p{padding-bottom:10px;text-align:left;font-weight:bold;width:300px;margin:0 auto;}
+#pluck-loading-dialog p span{height:10px;display:block;background:url(images/pluck-loading-bar.gif) top no-repeat;border:1px solid;overflow:hidden;}
+#comment-box-pluck #comment-box-progress p{margin:155px 0 124px;}
+#comment-box-pluck #comment-premoderation-area p{margin:122px 0 135px;}
+#comment-box-pluck #comment-close-confirmation-area p{margin:96px 0 79px;}
+#comment-box-pluck #comment-thank-you-area p{margin:137px 0 142px;}
+#comment-box-pluck #comment-pluck-error-area p{margin:113px 0 101px;}
+#abuse-box #abuse-progress-area p{margin:148px 0 116px;}
+#abuse-box #abuse-close-confirmation-area p{margin:80px 0;}
+#abuse-box #abuse-thank-you-area p{margin:104px 0 123px;}
+#submit{text-align:right;margin:20px 0;}
+#comment-box-pluck #submit{margin:10px 0;}
+#comment-box-pluck #submit .msg{float:left;}
+#submit #submit-comment{border-top-width:2px;border-bottom-width:1px;}
+#abuse-box #abuse-box-edit-area p{margin:10px 0;}
+#abuse-box label{font-weight:bold;}
+#abuse-box label span{font-weight:normal;}
+#abuse-close-confirmation-area p input,#comment-close-confirmation-area p input,#abuse-thank-you-area p input{display:block;margin:15px auto;}
+#abuse-box{width:300px;height:320px;}
+#abuse-box h2{font-size:1.3em;font-weight:bold;border:none;margin-top:0;}
+#abuse-box-wrapper #abuse-email-info,#abuse-box-wrapper #abuse-login-info{float:left;width:200px;}
+#abuse-box-wrapper #abuse-email-info{clear:both;}
+#abuse-box-wrapper #abuse-submit-container{float:right;width:96px;text-align:right;}
+#abuse-box-wrapper #abuse-submit{margin-top:25px;}
+body.pluck-user-profile div#user-profile div#abuse-box span{display:inline;float:none;margin-right:0;width:auto;}
+body.pluck-user-profile div#user-profile span#report-abuse-box-link-container{position:absolute;right:0;top:35px;background-image:url(images/pluck/report-abuse.gif);padding-left:18px;width:auto;}
+#signin-div{position:fixed;z-index:800;width:368px;padding:0;}
+#inline-login{width:368px;background-color:#fff;font-size:12px;color:#333;}
+#signin-div #login-close{font-weight:bold;padding:10px 10px 0;}
+#inline-login form{padding:0 10px 10px;clear:both;}
+#inline-login h1{font-size:1em;font-weight:bold;font-family:arial,sans-serif;padding:10px 0 0 10px;width:auto;}
+#inline-login legend{text-indent:-9999px;}
+#inline-login span.row label{display:block;margin-right:5px;width:103px;}
+#inline-login span.row{width:100%;overflow:hidden;display:block;}
+#inline-login span.row label,#inline-login span.row input{float:left;}
+#inline-login span.row input{width:200px;}
+#inline-login #inline-email-label,#inline-login #inline-remember-label{padding-bottom:14px;}
+#inline-login #inline-remember-label{margin-top:5px;}
+#inline-login #forgot-password{margin-left:107px;font-size:.916em;clear:left;}
+#inline-login input#inline-remember{margin-top:6px;width:auto;}
+.dialog-button,div.ReportAbuse_Comment input{float:right;font-family:arial,sans-serif;font-size:1em;margin-top:20px;margin-left:10px;padding:1px 4px;cursor:pointer;}
+#inline-login input#popUpSignIn,div.ReportAbuse_Comment input{font-weight:bold;background-color:#005689;color:#fff;border-width:1px;border-color:#005689;}
+#inline-login input#cancelSignIn{border:1px solid;background-color:#eee;}
+#header{padding-top:8px;background-color:#fff;border-color:#999;}
+div#sub-header{padding:3px;border-color:#bebebe;}
+#Top{border-bottom-color:#bebebe;border-bottom-width:1px;border-bottom-style:solid;clear:both;float:left;min-height:0;padding-bottom:10px;width:940px;}
+#Top,#Top a{text-align:center;line-height:0;}
+#header #guardian-logo,#header #observer-logo{line-height:1;border:0;display:block;float:left;margin-top:10px;margin-bottom:15px;}
+#section-selector{text-align:right;position:absolute;right:0;top:8px;width:300px;}
+#section-selector input{min-width:2.1em;}
+#zones-nav{width:940px;display:block;clear:both;line-height:1;font-family:georgia,serif;font-weight:normal;font-size:1.333em;}
+#zones-nav #global-nav{margin-bottom:10px;clear:both;width:100%;overflow:hidden;}
+#zones-nav #global-nav ul{margin:0;padding:0;float:left;}
+#zones-nav #global-nav ul li{float:left;padding:0;margin:0;width:auto;display:block;white-space:nowrap;}
+#zones-nav #global-nav ul li a,#zones-nav .local-nav li.heading-crumb{display:block;padding:4px 5px 4px 5px;margin:0;width:auto;}
+#zones-nav #global-nav ul li a,#zones-nav #global-nav ul a:hover{text-decoration:none;}
+#zones-nav .local-nav li.heading-crumb,#zones-nav .local-nav li.heading-crumb:hover{background-color:#fff;color:#333;}
+#zones-nav #global-nav ul li.first a{padding-left:5px;}
+#zones-nav #global-nav ul li.last a{border:none;}
+#zones-nav #global-nav ul li a{border-right:1px solid #bebebe;}
+#header #wrapper #zones-nav #global-nav li a{color:#333;background-color:#fff;}
+#header #wrapper #zones-nav #global-nav li a:focus,#header #wrapper #zones-nav #global-nav li a:active,#header #wrapper #zones-nav #global-nav li:hover,#header #wrapper #zones-nav #global-nav li a:hover{color:#fff;background-color:#333;}
+#global-nav li.news a{color:#d61d00;}
+#global-nav li.news a:focus,#global-nav li.news a:active,#global-nav li.news:hover,#global-nav li.news a:hover{color:#fff;background-color:#d61d00;}
+#global-nav li.sport a{color:#008000;}
+#global-nav li.sport a:focus,#global-nav li.sport a:active,#global-nav li.sport:hover,#global-nav li.sport a:hover{color:#fff;background-color:#008000;}
+#global-nav li.comment a{color:#0061a6;}
+#global-nav li.comment a:focus,#global-nav li.comment a:active,#global-nav li.comment:hover,#global-nav li.comment a:hover{color:#fff;background-color:#0061a6;}
+#global-nav li.culture a{color:#d1008b;}
+#global-nav li.culture a:focus,#global-nav li.culture a:active,#global-nav li.culture:hover,#global-nav li.culture a:hover{color:#fff;background-color:#d1008b;}
+#global-nav li.business a{color:#3246ab;}
+#global-nav li.business a:focus,#global-nav li.business a:active,#global-nav li.business:hover,#global-nav li.business a:hover{color:#fff;background-color:#3246ab;}
+#global-nav li.money a{color:#8f1ab6;}
+#global-nav li.money a:focus,#global-nav li.money a:active,#global-nav li.money:hover,#global-nav li.money a:hover{color:#fff;background-color:#8f1ab6;}
+#global-nav li.life-style a,#global-nav li.life-and-style a{color:#ad532f;}
+#global-nav li.life-style a:focus,#global-nav li.life-style a:active,#global-nav li.life-style:hover,#global-nav li.life-style a:hover,#global-nav li.life-and-style a:focus,#global-nav li.life-and-style a:active,#global-nav li.life-and-style:hover,#global-nav li.life-and-style a:hover{color:#fff;background-color:#ad532f;}
+#global-nav li.travel a{color:#066ec9;}
+#global-nav li.travel a:focus,#global-nav li.travel a:active,#global-nav li.travel:hover,#global-nav li.travel a:hover{color:#fff;background-color:#066ec9;}
+#global-nav li.environment a{color:#4a7801;}
+#global-nav li.environment a:focus,#global-nav li.environment a:active,#global-nav li.environment:hover,#global-nav li.environment a:hover{color:#fff;background-color:#4a7801;}
+#global-nav li a{color:#333;}
+#global-nav li a:focus,#global-nav li a:active,#global-nav li:hover,#global-nav li a:hover{color:#fff;background-color:#333;}
+div.rating-container,#promo div.rating-container{height:13px;margin-bottom:4px;width:68px;}
+.pickabletag div.rating-container{margin-top:10px;}
+body.front div.rating-container{position:relative;margin-bottom:11px;}
+body.network #wrapper div.rating-container{position:relative;top:-3px;margin-bottom:7px;}
+ul#auto-trail-block div.rating-container,ul#main-trailblock div.rating-container{position:relative;top:-6px;margin-bottom:2px;}
+body.three-five-four-grid .rating-container{position:relative;top:-10px;}
+body.three-five-four-grid .slot-machine .rating-container{top:0;}
+#p.ip_logged,div#content blockquote{color:#666;}
+#videoPaneNoscriptReplacement,div#velocityerrors li,h1.badge-name{color:#fff;}
+#section-classifieds h4{color:#005689;}
+div.numbered-list span.count{color:#444;}
+div.numbered-list div.strap,div.numbered-list div.trailtext{color:#999;}
+body,html,#section-tools a,#footer,ul.tips h3,.directory #box #content p,ul.tips li strong,#nav ul li span,.copyright,#section-contents ul li ul li p.description,.commercial #promo .capsule,ul.credit li p.description,body.directory .count,#promo #finance-guides,body.video-series div#latest-series ul li h2,body.interactive div.navigation ul#main-trailblock li div.strap,body.audio-canonical .more-podcasts li h5,body.audio div#more-in-audio-series h2,#article-header #strap,#wrapper #results-trailblock h2,body.quiz div#quiz-answers ul.weighted-responses li em,#article-header #biography h2{background-color:white;color:#333;}
+body.audio-canonical #subscribe-feeds{background-color:#EDEDED;border-color:#BCBCBC;}
+body.audio div#more-in-series{border-bottom-color:#e5e5e5;}
+body.audio .more-podcasts{border-bottom-color:#fff;}
+body.audio #related div.relatedlinks h3{border-color:#999;}
+body.clippings .meta-data .annotation p,body.clippings .meta-data p.clipped-on,#article-header h2{color:#999;}
+#promo h4,#promo h4 label,#promo #reader-offers h4,div#wrapper div.strap{color:#333;background-color:transparent;}
+a,div#league-position a,body.sport div.ventures-slot-machine a{color:#005689;}
+div#promo div.latest-cif-posts a:focus,div#promo div.latest-cif-posts a:active{outline:none;background-color:#005689;color:#fff;}
+body.sport #wrapper #section-contents #onsite #sponsored-features li .linktext a{color:#0a246a;}
+div#promo div.latest-cif-posts a{color:#005689;}
+a:focus,a:active{outline:none;background-color:#005689;color:#fff;}
+body.front div#box div#content div#feature-pick div#main-trailblock h2,body.front div#wrapper div#box div#promo-a h2,body.audio-front div#wrapper div#box div#promo-a div.latest h2,body.front div#wrapper div#box div#promo-a div#more ul.trailblock li.major-heading h2,body.cartoon-front div#wrapper #box ul#editor-zone-1 li.major-heading h2,body.promo-front div#wrapper #box #editor-zone-3 li.major-heading h2,body.multimedia-front div#wrapper #box #editor-zone-3 li.major-heading h2,body.cartoon-front div#wrapper #box div#latest-trails h2,body.audio-front div#wrapper div#footer,body.video-front div#wrapper div#footer,body.cartoon-front div#wrapper div#footer,body.video-front div#wrapper div#promo div,body.audio-front div#wrapper div#promo div,body.cartoon-front div#wrapper div#promo div,body.multimedia-front div#wrapper div#promo div,body.multimedia-front div#wrapper div#footer,body.promo-front div#wrapper div#promo div,body.promo-front div#wrapper div#footer,body.promo-front div#wrapper #content div.single-tag h2{border-color:#0061A6;}
+*{background-repeat:no-repeat;}
+#section-contents li,#box h2,#related #book-index h2,#article-header #biography h2,.bio,body.article #content h3,#promo #finance-guides table tbody td,#promo #finance-guides table tbody th,#promo div#finance-guides,#book-index img.paper-thumb,body.most-popular div.most-top-ten,#sign-off,.trailblock .featured-trailblock ul.sublinks li{border-color:#ccc;}
+#article-header h2{border:none;}
+#stand-first,p.drop:first-letter,span.drop,body.blog-post #stand-first{color:#666;}
+body.directory #box h2{background-image:none;}
+div.level-3,#box h2,#gallery-series-navigation h3{background-position:bottom left;}
+#section-contents li li{background-image:none;}
+.count,.page-number,li.horizontal,ol.az-trips li p,body.video-front .video-duration,#calendar td.not-this-month,body.keyword-page p#more-daylife{color:#999;}
+ul.toolset li a{background-position:left center;padding-left:20px;display:block;background-color:transparent;}
+#promo h2,#promo h3,#booking fieldset.section,#booking fieldset.section span,#also-on ul.viewer li,#related h5,div#sub-header,#related #fact-box h2,body.article #box #content h2,body.article #box #content h3,body.article #related h3,body.poll #related h3,body.quiz form.quiz ol li.question-container,body.quiz form.quiz ol,body.competition div#box div#related h3,#related-articles ul li,.services,ol.timeline li,body.video-series div#box div#content ul.trailblock,#book-index ul li,body.series-index ul.auto-trail-block li p.date,body.series-index #content ul.auto-trail-block li h3.series-index-article,body.cartoon div#related ul.keywords li.series p,body.cartoon #wrapper #box div.linktext h3,#related ul#article-toolbox-side li.resize,#section-contents ul#article-toolbox-side li.resize,body.article ul#article-toolbox,body.gallery ul#article-toolbox,#content ul#article-toolbox,body.audio-canonical #view-notes,body.audio-canonical #full-contents h2,body.audio div#more-in-audio-series .description,body.audio .more-podcasts h5.group-title,#box #content #our-blogs li h3,body.article div.related-item div.related-bottom-links,table.team-matches tr,table.league-position tr,div.ventures-slot-machine p,div#secondary-trailblocks ul.default-trailblock li .trail-caption,body.sport #wrapper #content #results-trailblock li.vertical,#section-contents #most ol,div#most div.most-pane li,#box #content #most p.more-on,.video-front div#content div#video-player ul.article-attributes,body.books div#section-contents div.best-sellers ol li,div.terms-and-conditions h4,form.competition ul.first,body.web-search div#box h2,body.web-search div#box h3,#user-reviews .Reviews_UserImage,#user-reviews .Reviews_TableRight,body.people div#article-content,body.people div#box div#people-tabs,body.people div#related ul li.vertical,body.people #wrapper #content ul#auto-trail-block li.wide div.media-above h3,table.in-article h2,table.in-article th,table.in-article td,table.in-article tfoot div.source,table.stand-alone th,table.stand-alone td,table.stand-alone tfoot div.source,body.film div#content div#main-trailblock ul#film-info li,body.film div#related div#user-rating-side h2,div#advertiser-container ul.results li,p#about-daylife,body.video-front div#more ul.trailblock li,body.audio-front div#more ul.trailblock li,body.front div#box div#content div#feature-pick div#main-trailblock div#content-header h2,body.video-series div#box div#content div#main-trailblock div#content-header h2,div#pluck-container div#progress-bar div,div#pluck-container div#progress-bar,#pluck-loading-dialog,body.other ul#main-trailblock div.linktext h3,body.front div#our-blogs p.more-on,body.clippings div.clipping-contents,body.pluck-user-profile div#pluck-recent-activity-container div#pluck-latest-comments ul li.first,body.pluck-user-profile div#user-profile table td,body.pluck-user-profile div#user-profile table th,body.audio-front div#feature-pick div#content-header ul.audio-page,body.front div#content div.recent-blogs ul li,body.front div#content div.recent-blogs ul li,body#interactive-front div#related div.relatedlinks h3,#league-position table th,#league-position table td,#league-position table thead tr,table.stand-alone caption{border-color:#999;}
+body.comments div#content div#pluck-comment-container div.pluck-comment-block ul li{border-color:#999;}
+div#pluck-container div#progress-bar span{background-color:#9CD6F5;}
+body.audio-canonical #section-contents .keyword-list h2{border-bottom-color:#999;}
+#related-info .section ul li,body.article #related-info ul.keylinks li,body.article #related-info ul.tips li,div#content ul.auto-trail-block li h2,div#section-contents ul.tips li,div#section-contents ul li,body.clippings div#section-contents ul,#section-contents ol.most-read li,div #box div#content ul li h2,#related-info .section ul li,body.article #related-info ul.keylinks li,body.article #related-info ul.tips li,.article #related h3,ul.child-keyword li,.index .breakdown,.all-places .breakdown,.weather-country .breakdown,.weather-continent .breakdown,.index .country,#wrapper div#section-contents ul#editor-zone-3 li,#wrapper div#section-contents ul#editor-zone-4 li,#wrapper #box #content ul#editor-zone-5 li.vertical,div#pickable-rss-rule-slot div.rss_wrapper ul li,ul.trailblock li.wide div.trail-caption{border-color:#999;}
+ol.alphabet,body.directory-place .index,#content ul.auto-trail-block li,#content ul.auto-trail-block li div.trail-caption,#keyword-trailblock li,ul.pagination,#content ul#main-trailblock li.normal,#related p.shower,body.front #wrapper #box #content div.cols ul li.major-heading h2,div.text{border-color:#999;}
+#related .ed-zone li,#edited-offers a.caption,#content ul.tri li,ol.az-trips li,.capsule ul.tri li,ul.trailblock li.portrait .linktext h3,#section-contents ul li,#content .reader-tips ul.tips li,.trail-block-page #content ul#main-trailblock li,ul.no-pic,body.gallery #sponsor-picture,#content li.col h2,#content li.col h3,body.vss #content ul.credit,div#solo-trailblock h3,body.cartoon-index div#recent-trailblock ul li h3{border-color:#999;}
+.front #promo h4{border-color:#999;}
+#promo h4,.commercial #wrapper #promo li,#promo .capsule ul.tri li,body div#wrapper div#promo .slot p.linktext{border-color:#333;}
+#promo div.capsule,body.travel #wrapper div#edited-offers li.major-heading h3,body.commercial #wrapper #promo div.capsule,body.cartoon-index div#wrapper div#footer ul#footer-links,body.cartoon-index div#wrapper div#box ul#main-trailblock,body.cartoon-index #wrapper div#box #recent-trailblock h2,body.cartoon-index #wrapper div#box div#related ul#editor-zone-1 li.major-heading h2,body.web-search div#footer,body.web-search div#results,body.contributor #wrapper #footer #footer-links,body.style-guide #wrapper #promo div.capsule,body#table-full-width-content div#wrapper div#promo div.capsule{border-color:#d3d3d3;}
+body.front div#wrapper div#promo div.capsule{background-color:transparent;}
+body.front #promo{background-color:transparent;}
+body.education #page-header,#header,#also-on{color:inherit;background-color:white;}
+table#calendar{color:#333;background-color:#ededed;}
+table#calendar tr.month-nav th,table#calendar,table#calendar td{border-color:#c3c3c3;}
+body.gallery #Top{background-color:#dedede;}
+body.cartoon #Top{background-color:transparent;}
+#relatedlinks{position:relative;}
+#Top,#sub-header,ul.user-details li{border-color:#bebebe;}
+ul.credit,#related-info ul.tips p.credit,#header #nav ul,.explainer,span.credit{color:#999;}
+span.pullout,div.page-heading p.linktext,p.trailstrap,div.strap,ul.commercial-links li,ul.pagination,p span.caption,body.video-front .trail-video-section,#last-updated,span.caption{color:#666;}
+#content .regionplaceholder p,body.front #edited-offers ul li,#edited-offers a.caption,body.directory-place #content .countries p.first,#book-index ul li ul,#book-index ul li ul li,#wrapper ul#more-news li.col ul li,#wrapper ul#more-news h3,body.sport #wrapper #content div#main-trailblock ul#more-news .major-heading h2{border-color:#999;}
+body.competition form.competition,body.competition p.closed,#promo div.capsule{background-color:#f3f3f3;}
+a.webfeedlink{background-image:url(images/icon_rss.gif);background-position:0 50%;display:block;height:14px;padding-left:18px;padding-top:1px;}
+#wrapper h2.beta{font-size:6em;position:fixed;right:10px;top:10px;color:red;}
+div.temp p{color:#fff;}
+body.video #content #videos-third-column h2,body.video #videos-third-column ul li{border-color:#999;}
+body.video-front #nav a.current{color:#005689;}
+body.video #content li.date,body.video #content li.credit{color:#666;}
+div #box div#content div.latest ul li.News h2{border-color:#04669c;}
+div#promo #most-viewed div.most-pane{background-color:#fff;}
+div.temp p{border-color:#fff;}
+body.beautiful-boss div#promo,body.beautiful-boss div#box{border-bottom-color:white;}
+body.beautiful-boss div#wrapper{background-image:url(images/beautiful-boss-bg-inner.gif);}
+body.beautiful-boss div#article-header,body.beautiful-boss div#content h2.first,body.beautiful-boss div#recent li{background-color:white;}
+body.beautiful-boss div#related{border-top-color:white;}
+body.video-front div#content,body.video-front div#content h2,body.video-series div#box div#content ul li h2,body.video-front div#content #editors-heading h2,body.video-front div#box div#content div.latest li h2,body.video-front div#wrapper div#box div#more li.major-heading h2,body.video-front #footer,body.audio-front div#wrapper div#box div#more li.major-heading h2,body.audio-front div#wrapper div#box div#promo-a h2,body.audio-front div#wrapper div#box div#audio-pick h2,body.audio-front div#wrapper div#content-header,body.audio-front #footer,body.content-index div#wrapper div#box div#content ul#main-trailblock li.major-heading h2,body.content-index div#content h3.first,body.content-index div#wrapper div#box div#related div.capsule ul li.major-heading h2,body.content-index div#box div#content h2.first,body.content-index div#wrapper div#footer,body.front div#box div#feature-pick h2,body.front div#box div.latest-from-section h2{border-color:#D61D00;}
+#wrapper #box ul li.News h2,#wrapper #box ul li.News h3{border-color:#d61d00;}
+#wrapper #box ul li.Sport h2,#wrapper #box ul li.Sport h3{border-color:#008000;}
+#wrapper #box ul li.Politics h2,#wrapper #box ul li.Politics h3{border-color:#d61d00;}
+#wrapper #box ul li.Travel h2,#wrapper #box ul li.Travel h3{border-color:#6bbde9;}
+#wrapper #box ul li.Science h2,#wrapper #box ul li.Science h3{border-color:#d61d00;}
+#wrapper #box ul li.Media h2,#wrapper #box ul li.Media h3{border-color:#d61d00;}
+#wrapper #box ul li.news h2,#wrapper #box ul li.news h3{border-color:#d61d00;}
+#wrapper #box ul li.sport h2,#wrapper #box ul li.sport h3{border-color:#008000;}
+#wrapper #box ul li.Politics h2,#wrapper #box ul li.Politics h3{border-color:#da0034;}
+#wrapper #box ul li.Science h2,#wrapper #box ul li.Science h3{border-color:#2bbafe;}
+#wrapper #box ul li.travel h2,#wrapper #box ul li.travel h3{border-color:#65c5fb;}
+#wrapper #box #our-blogs h2,#wrapper #box ul li.blogs h3{border-color:#ce2e20;}
+#wrapper #box ul li.lifestyle h2,#wrapper #box ul li.lifestyle h3{border-color:#ffd200;}
+#wrapper #box ul li.arts h2,#wrapper #box ul li.arts h3{border-color:#f8298b;}
+#wrapper #box ul li.media-professional h2,#wrapper #box ul li.media-professional h3,#wrapper #box ul li.Media h2,#wrapper #box ul li.Media h3{border-color:#ff8400;}
+#wrapper #box ul li.business-money h2,#wrapper #box ul li.business-money h3{border-color:#8388e4;}
+#wrapper #box ul li.comment h2,#wrapper #box ul li.comment h3{border-color:#0061a6;}
+#wrapper #box ul li.news h2,#wrapper #box ul li.news h3{border-color:#ce2e20;}
+#wrapper #box ul li.shops-services h2,#wrapper #box ul li.shops-services h3{border-color:#266f9b;}
+#wrapper #box ol.most-read li.first h2,#wrapper #box ol.most-read li.first h3{border-color:#266f9b;}
+#wrapper #box ul li.culture h2,#wrapper #box ul li.culture h3{border-color:#d1008b;}
+#wrapper #box ul li.business h2,#wrapper #box ul li.business h3{border-color:#4a64d9;}
+#wrapper #box ul li.money h2,#wrapper #box ul li.money h3{border-color:#8f1ab6;}
+#wrapper #box ul li.life-style-1 h2,#wrapper #box ul li.life-style-1 h3{border-color:#ffc202;}
+#wrapper #box ul li.life-style-2 h2,#wrapper #box ul li.life-style-2 h3{border-color:#c93900;}
+#wrapper #box ul li.travel-1 h2,#wrapper #box ul li.travel-1 h3{border-color:#65c5fb;}
+#wrapper #box ul li.travel-2 h2,#wrapper #box ul li.travel-2 h3{border-color:#066ec9;}
+#wrapper #box ul li.environment-1 h2,#wrapper #box ul li.environment-1 h3{border-color:#7bbb00;}
+#wrapper #box ul li.environment-2 h2,#wrapper #box ul li.environment-2 h3{border-color:#4a7801;}
+#wrapper #box ul li.red h2,#wrapper #box ul li.red h3{border-color:#de4a33;}
+#wrapper #box ul li.blue h2,#wrapper #box ul li.blue h3{border-color:#4c90c1;}
+#wrapper #box ul li.yellow h2,#wrapper #box ul li.yellow h3{border-color:#ffb93e;}
+#wrapper #box ul li.black h2,#wrapper #box ul li.black h3{border-color:#000;}
+#wrapper #box div#content ul li.arts-culture h2,#wrapper #box div#content ul li.arts-culture h3{border-color:#f8298b;}
+body.video-front div#promo div.capsule,body.audio-front div#promo div.capsule{border-color:#666;}
+.pluck-comment-block .pluck-content{border-color:#666;}
+#box div.pickabletag li h2,#box div#content div.pickabletag ul li h2{border-color:#d61d00;}
+#box div.pickabletag li h2.sport,#box div#content div.pickabletag ul li h2.sport{border-color:#008000;}
+#box div.pickabletag li h2.comment,#box div#content div.pickabletag ul li h2.comment,body.show-all-comments div#post-comment-div-bottom .pluck-comment-post{border-color:#0061a6;}
+#box div.pickabletag li h2.culture,#box div#content div.pickabletag ul li h2.culture,#box div.pickabletag li h2.film,#box div#content div.pickabletag ul li h2.film,#box div.pickabletag li h2.music,#box div#content div.pickabletag ul li h2.music{border-color:#d1008b;}
+#box div.pickabletag li h2.business,#box div#content div.pickabletag ul li h2.business{border-color:#4a64d9;}
+#box div.pickabletag li h2.money,#box div#content div.pickabletag ul li h2.money{border-color:#8f1ab6;}
+#box div.pickabletag li h2.lifeandstyle,#box div#content div.pickabletag ul li h2.lifeandstyle{border-color:#ffc202;}
+#box div.pickabletag li h2.travel,#box div#content div.pickabletag ul li h2.travel{border-color:#65c5fb;}
+#box div.pickabletag li h2.environment,#box div#content div.pickabletag ul li h2.environment{border-color:#7bbb00;}
+#promo a:focus,#promo a:active,body.front .commercial a:focus,body.front .commercial a:active{background-color:#005689;color:#fff;}
+body.sport #onsite .commercial a:focus,body.sport #onsite .commercial a:active{background-color:#008000;}
+body.gallery div.lightbox ol li a:hover{background-color:#005689;color:#fff;}
+body.gallery div#box div#overlay a{color:#00c7ff;}
+body.quiz div#quiz-answers em,body.quiz p.quiz-error,body.competition p.competition-error,body.competition p.closed{color:#F00;}
+body.quiz #related div.relatedlinks h3{border-color:#999;}
+body.subject-index #index-toggle-nav a,body.contributor-index #index-toggle-nav a,body.people #index-toggle-nav a{background-color:#fff;border-bottom:1px solid #fff;color:#000;}
+body.subject-index #index-toggle-nav a.inactive,body.subject-index #index-toggle-nav a.inactive b,body.contributor-index #index-toggle-nav a.inactive,body.contributor-index #index-toggle-nav a.inactive b,body.people #index-toggle-nav a.inactive,body.people #index-toggle-nav a.inactive b{border-bottom-color:#ccc;color:#444;}
+#latest-results-and-reports h2{background-color:#fff;}
+#latest-results-and-reports div.col table.stand-alone thead tr,#latest-results-and-reports div.col table.stand-alone thead tr th{background-color:#a6d0a2;}
+#latest-results-and-reports div.col table.stand-alone tr,#latest-results-and-reports div.col table.stand-alone tr td{background-color:#fff;}
+#latest-results-and-reports div.col table.stand-alone tbody tr:hover{background-color:#fff3a5;}
+body.front div#latest-results-and-reports table.stand-alone caption,body.front table.stand-alone caption h1,body.front table.stand-alone caption p{color:#333;}
+body.olympics #content table.stand-alone tfoot{border-color:#fff;}
+body.medal-page div#content table img{border-color:#ccc;}
+body.fixtures-and-results-discipline div#content{border-color:#989898;}
+body.olympics #article-header h2{color:#333;}
+div#promo div.capsule table.stand-alone thead tr,div#promo div.capsule table.stand-alone thead tr th{background-color:#a6d0a2;}
+div#promo div.capsule table.stand-alone tr,div#promo div.capsule table.stand-alone tr td{background-color:#f3f3f3;}
+body.date div#box div#article-header h2{color:#999;}
+div#blogs-calendar table tbody tr.active{background-color:#005689;}
+div#blogs-calendar table tbody tr.active a{color:#FFF;}
+div#blogs-calendar table tbody tr.has-links:hover{background-color:#CCC;}
+div#blogs-calendar div.capsule{background-color:white;}
+div#blogs-calendar table#calendar{background-color:transparent;}
+body.front div#content div#feature-pick #content-header,div#box div#content div#latest-trails ul.cartoon-latest li .series,body.front div#content div#feature-pick ul.article-attributes,body.video-series div#content div#content-header ul.article-attributes,div#content div#feature-pick div#content-header.video-page ul h3,div#blogs-calendar table tbody td,div#blogs-calendar table thead th,div#content ul#blog-posts-excerpts div.blog-excerpt h2,#most-viewed div.pane-wrapper,#most-commented div.pane-wrapper{border-color:#999;}
+div#wrapper div#intrusive,body.front div#content div.recent-blogs h2,body.front div#content div.recent-blogs p.more-on{background-color:#fff;}
+div#main-offers #commercial-partners ul li div.trailtext{color:#333;}
+body.boss-tag div.col1,body.boss-tag ul#main-trailblock,body.boss-tag #wrapper #box #content .col1 #paginated-tag-content h3,body.boss-tag #wrapper #box #content .col1 #paginated-tag-content p,body.boss-tag div#article-header,body.reuters #stock-search-form{background-color:#fff;}
+body.boss-tag div#wrapper div#content div#main-trailblock,body.boss-tag div#wrapper div#box div#content #article-header,body.boss-tag div#wrapper div#box div#content #paginated-tag-content h3,body.boss-tag div#wrapper div#box div#content .pickabletag{background-color:#fff;}
+body.boss-tag div#section-pickable-tag-combiner li,div#related div.capsule h4,body.video #wrapper #box #related h3{border-top-color:#999;}
+table.ftse100 th span,body.boss-tag #box #content div#related div.recent-blogs ul.tips li.tips-package ul.credit li.blog-date,body.boss-tag #box #content div#related div.recent-blogs ul.tips li.tips-package ul.credit li.blog-contributor{color:#999;}
+body.boss-tag #box #content #related ul.tips li.tips-package ul.credit li,.keyword-page #section-contents ul.tips ul.credit li{color:#333;}
+body.boss-tag #also-on{border-top-color:#fff;}
+body.boss-tag div#wrapper div#content div#main-trailblock li,body.boss-tag div#paginated-tag-content p{border-top-color:#999;}
+p.more-on,table.marketindex td.timetillclose{color:#999;}
+table.ftse100,table.ftse100 tbody th,table.ftse100 td,table.marketindex{border-top-color:#c3c3c3;}
+body.reuters div#movers-chart{border-bottom-color:#c3c3c3;}
+table.marketindex td.netchange{color:#fff;}
+body.reuters .stock-toggle-pane,body.reuters p#reuters-blurb{border-color:#bebebe;}
+body.style-guide div#wrapper div#promo div.capsule{background-color:#f3f3f3;}
+div.related-content,body#film-front .news #main-trailblock{border-bottom-color:#fff;}
+div#more-in-series h3,.related-content h3#relatedInformation,body.cartoon .related-content h3.first{background-color:#fff;}
+div.related-item div.related-footer,div.related-content div.multi h5,#box .related-content div.relatedlinks h3,.related-content div.relatedlinks h3,.related-content h3.first,body.cartoon .related-content h3.first,.related-content div.related-item p.noTrailPicture,body.cartoon div.relatedlinks h3{border-color:#999;}
+div.series-navigation{color:#333;}
+body.country-tag #wrapper #content ul#main-trailblock li.first div.media-above,body.country-tag #wrapper #content ul#auto-trail-block li.first div.media-above{border-color:#999;}
+body#visual-folder-list div#box div#sub-header{border-color:#ccc;}
+body#visual-folder-list ul#columnist-list li{border-color:#333;}
+#best-buy-container .all-deals,.newspaper-thumbnail{border-color:#999;}
+#zones-nav,#Top{width:960px;}
+div#inner-wrapper,body #wrapper,body #wrapper li.pixie div.trail-text,body #content .trailblock li.pixie div.caption{background-image:none;background-color:transparent;}
+.component h2,#page-header,#promo h2,#promo-a h2,#related h2,#section-contents h2,#content h2,#footer,#google-ads-container h3,.json-features h3,#more-in-series h2,#pluck-container h2,#pickable-content-combiner h3,.pickabletagrelationship h3,#recent-trailblock h2,#editor-zone-3 h2,#finance-guides h4,#previous-polls h3,.latest-cif-posts h3,.capsule h3,.row-combiner h3,.binary-poll h3,.heading-vertical-links h2,.more-on h3{border-top:10px solid;border-color:inherit;margin-top:60px;font-family:georgia,serif;}
+.trail-caption h3,.our-blogs-pane h4,.pixie h3,.pixie p.strap{font-family:georgia,serif;}
+#page-header{margin-top:0;}
+.section-heading,#masthead{position:relative;}
+.section-heading a.feed,#weather-header{position:absolute;top:0;right:0;}
+.component li,.trailblock li,.att-tabs ol li,#manual-trailblock li,.relatedlinks li,.relatedlinks h3,.related-item,.related-item h5,#secondary-trailblocks li,#third-trailblocks li,.ventures-slot-machine,#cif-picks div.full,#cif-picks div.reduced,.pickabletag li,#pickable-content-combiner li,.pickabletagrelationship li,.pickabletagrelationship h4,#keyword-links li,#cif-auto-trail-block li,#google-ads-container li,#more-trails-tabbed .trails li,.latest li,#more-in-series li,.child-keyword li,#previous-polls li,ul.pluck-comment,div#pluck-pagination-top,div#pluck-pagination-bottom,div#post-comment-div-top,div#post-comment-div-bottom{border-top:3px solid #ccc;margin-top:30px;padding-top:2px;}
+li.major-heading,#main-trailblock .news li.first{border-top:none;margin-top:0;}
+a.comment-icon{padding-left:20px;background-position:0 center;}
+.rating-container img,img.mask{position:absolute;}
+img.mask{left:0;}
+li.pixie .trail-text,.toolbox-popup,#article-toolbox,#ticker-controls,.slot-overlay,.component-overlay{display:none;}
+.link-text img,.link-image img{margin-top:5px;}
+#weather-header,#local-info{clear:left;margin-left:5px;}
+#local-info p,#weather-header p,#footer li,.pagination li,#article-toolbox-side li,#content-actions li,#content-actions li div,.article-attributes li,.gallery-navigation li,body a.webfeedlink{display:inline;}
+.audio-front .article-attributes li{display:block;}
+.network #search,.network #web-search{float:none;clear:left;}
+#section-selector fieldset{float:right;}
+#search,.network #search,.network #web-search{padding-top:0;}
+label{width:auto;}
+#article-toolbox-side li{margin-right:10px;}
+#article-toolbox-side li span{margin-left:5px;}
+.send-inner{border:9px solid #cdcdcd;background-color:#fff;padding:8px;}
+.send-inner li{border-top:1px dotted;}
+.article #content,#video-player,.audio #content,.competition #content,#article-header,.article-attributes{padding-bottom:33px;border-bottom:3px solid #ccc;}
+.article-attributes{margin-bottom:30px;}
+.article-attributes .contributor-pic-small{float:left;margin-top:3px;}
+#article-wrapper p{margin-bottom:20px;}
+#stand-first{color:#666;}
+ul#ticker li{list-style-position:inside;margin-top:15px;list-style-type:disc;padding-right:15px;}
+#ticker li{list-style-type:none;display:none;line-height:1.25;font-weight:normal;height:1em;}
+#ticker li.first{display:list-item;}
+.environment h2,.environment h3{border-color:#7bbb00;}
+.gallery{background-color:#333;padding:10px;color:#999;}
+.gallery .mini-nav li{float:left;overflow:hidden;padding-bottom:10px;}
+.gallery .figure,.gallery .placeholder{clear:both;text-align:center;}
+.gallery .figure{border-width:3px 0;border-style:solid;border-color:#999;}
+.gallery .figcaption{border-bottom:3px solid #999;padding:10px;margin-bottom:10px;}

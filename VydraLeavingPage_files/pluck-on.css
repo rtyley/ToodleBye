@@ -1,0 +1,6 @@
+.pluck-init-block{display:block;}
+.pluck-init-inline{display:inline;}
+.pluck-off-error{display:none;}
+.pluck-on,a.comment-count-info{display:block;}
+a.comment-icon{background-image:url(images/comment12x12.gif);}
+#comment-info-related a.comment-icon{background-image:url(images/icon_comment.gif);}

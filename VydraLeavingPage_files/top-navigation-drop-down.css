@@ -1,0 +1,24 @@
+.top-navigation{padding-top:0;margin-bottom:20px;top:0;left:0;}
+.top-navigation,.top-navigation span,.top-navigation .drop-down,.top-navigation h2{float:left;height:2.5em;line-height:2.5em;background-color:#ededed;color:#333;}
+.top-navigation h2{background-color:transparent;}
+.top-navigation .user-details .drop-down{background-image:url(images/user_icon_nobg.gif);background-repeat:no-repeat;background-position:5px center;float:left;padding-left:25px;}
+.top-navigation .drop-down,.top-navigation .user-details h2{position:relative;background-image:url(images/arrow_down_333.png);background-repeat:none;background-position:right center;}
+.top-navigation .drop-down h2,.top-navigation .drop-down li{padding-bottom:0;margin-right:0;font-weight:normal;}
+.top-navigation .drop-down:hover,.top-navigation span:hover{background-color:#d9d9d9;}
+.top-navigation span.middot:hover{background-color:transparent!important;}
+.top-navigation span a:focus{background-color:transparent;outline:1px dotted #999;}
+.top-navigation span a:active{color:white;background-color:#005689;}
+.top-navigation .drop-down ul{background-color:#d9d9d9;clear:left;position:absolute;left:0;top:2.5em;width:180px;-moz-box-shadow:5px 5px 8px #666;-webkit-box-shadow:5px 5px 8px #666;box-shadow:5px 5px 8px #666;z-index:5;}
+.top-navigation .drop-down.mirror ul{right:0;left:auto;}
+.top-navigation .drop-down ul li{line-height:1.8;float:none;zoom:1;}
+.top-navigation .drop-down ul li a{display:block;text-decoration:none;padding-left:10px;padding-right:10px;}
+.top-navigation .user-details .drop-down ul li a{padding-left:25px;}
+.top-navigation .drop-down ul li a:hover{background-color:#c6c6c6;}
+.top-navigation .other-functions{float:right;}
+.top-navigation .drop-down ul li,.top-navigation .user-details .drop-down,.top-navigation .user-details span,.top-navigation #drop-down-1,.top-navigation #drop-down-2,.top-navigation #sign-out,.top-navigation #smaller,.top-navigation .webfeed{border-width:0 1px 0 0;border-style:solid;border-color:#c6c6c6;}
+.top-navigation .drop-down ul li{border-top-width:1px;border-right-width:0;}
+.top-navigation .drop-down,.top-navigation .user-details h2,.top-navigation .user-details span,.top-navigation span#smaller,.top-navigation span.webfeed{padding-left:10px;padding-right:10px;}
+.top-navigation .drop-down,.top-navigation .user-details h2{padding-right:29px;}
+.top-navigation .user-details .drop-down h2{padding-left:0;}
+.top-navigation .user-details .drop-down,.top-navigation span.middot{padding-right:0;}
+.top-navigation span#larger{padding-right:10px;}
